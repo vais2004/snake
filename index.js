@@ -7,10 +7,9 @@ const musicSound = new Audio("\musicsound.mp3");
 let speed = 2;
 let lastPaintTime = 0;
 let snakeArr =[
-    {x: 13, y:15}
+    {x: 13, y:15}`  `
 ]
 food = {x: 13, y:15};
-
 
 //game functions
 function main(ctime) {
@@ -43,14 +42,6 @@ function gameEngine(){
         foodElement.classList.add("food");
         board.appendChild(foodElement);
 }
-
-
-
-
-
-
-
-
 
 //main logic start here
 window.requestAnimationFrame(main);
